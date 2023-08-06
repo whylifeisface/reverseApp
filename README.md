@@ -50,8 +50,15 @@ app 屡次停止运行 未解决导致我无法脱壳
 `frida-ps -Ua 查看当前 app 包名` 
 pip 安装 frida-dexdump
 
-1. -d, --deep-search 深度搜索  用时更长
+1. -d, --deep-search 深度搜索  用时更长.
+
 2. -o OUTPUT, --output OUTPUT  Output folder path, default is './<appname>/'.
 
 `adb  
 -s  xx  表示有多个可连接  选中其中之一`
+
+
+## ddms.bat
+    
+adb包工具.
+    可以用来查看 Log.d等控制台输出
