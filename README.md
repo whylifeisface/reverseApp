@@ -62,3 +62,30 @@ pip 安装 frida-dexdump
     
 adb包工具.
     可以用来查看 Log.d等控制台输出
+
+## frida 配置
+pc 端.
+1. pip install frida-tools #CLI tools.
+pip install  # frida binding.
+2. npm install frida # Node.js binding.
+手机
+
+查看cpu架构
+adb shell.
+getprop ro.product.cpu.abi #进行端口转发
+adb forward tcp:27042 tcp:27042
+adb forward tcp:27043 tcp:27043
+
+
+
+
+ `frida 和手机端frida-server 版本一致` [firda -service-xx-android-arm(x86).xz] -> data/local/tempt/ 权限9.
+shell -> su -> cd data/local/tempt/ -> ./frida  .
+ ` 手机版 shell 之后su失败 p19 frida专题`
+
+ [frida官网](https://frida.re/docs/frida-ps)
+  frida-ps -U
+ frida-ps -Ua
+  frida-ps -Uai
+
+  ## frida 两种模式
