@@ -84,8 +84,50 @@ shell -> su -> cd data/local/tempt/ -> ./frida  .
  ` 手机版 shell 之后su失败 p19 frida专题`
 
  [frida官网](https://frida.re/docs/frida-ps)
+
+
   frida-ps -U
  frida-ps -Ua
   frida-ps -Uai
 
   ## frida 两种模式
+
+### 主动调用实例对象的方法
+1. 重新new 一个
+2. 获取内存中的对象
+``` js
+function callFun(){
+    let hookClassName = "com.cxcrecak.vipcallfun.callFun";
+    let callResStr = "";
+    Java.perform(function(){
+        Java.choose(hookClassName,{
+            onMatch: function(inclass){
+                console.log("hi ","\n\t")
+                // inclass 相当于类 
+                callResStr = inclass.getStringA("how are you");
+
+            },
+            onComplete: function(){
+                console.log("bye ","\n\t")
+
+            }
+        })
+        return callResStr;
+    })
+}
+
+
+function callFunNew(){
+    let hookClassName = "com.cxcrecak.vipcallfun.callFun";
+    let callResStr = "";
+    Java.perform(function(){
+        let cls = Java.use(hookClassName);
+        let obj = cls.$new();
+        callResStr = obj.getStringA("hello");
+        return callResStr;
+    })
+}
+
+
+
+```
