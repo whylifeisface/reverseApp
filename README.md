@@ -128,6 +128,13 @@ function callFunNew(){
     })
 }
 
-
-
 ```
+内存中的类和函数
+获取内存中加载的类 enumerateLoadedClasses
+
+
+获取类中的所有方法 getDeclaredMethods
+
+[对象转换](./reserverObject.js)
+
+
