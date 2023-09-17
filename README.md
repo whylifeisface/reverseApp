@@ -142,3 +142,10 @@ function callFunNew(){
 magisk 下载成功  fastboot 有问题
 =======
 >>>>>>> a9dfae7db0dc593e1a8bc40d5a1dea2f5c71b8dc
+````
+Frida不能和Magisk Hide一起使用
+
+cd d:/reverseApp/dump
+
+
+/data/data/com.nw.cleansite.novel/files/dump_dex_com.nw.cleansite.novel/
