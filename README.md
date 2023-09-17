@@ -131,3 +131,4 @@ function callFunNew(){
 
 
 ```
+magisk 下载成功  fastboot 有问题
