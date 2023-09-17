@@ -128,7 +128,17 @@ function callFunNew(){
     })
 }
 
+```
+内存中的类和函数
+获取内存中加载的类 enumerateLoadedClasses
+
+
+获取类中的所有方法 getDeclaredMethods
+
+[对象转换](./reserverObject.js)
 
 
 ```
 magisk 下载成功  fastboot 有问题
+=======
+>>>>>>> a9dfae7db0dc593e1a8bc40d5a1dea2f5c71b8dc

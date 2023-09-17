@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/reverseApp.iml" filepath="$PROJECT_DIR$/.idea/reverseApp.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/rersverApp.iml" filepath="$PROJECT_DIR$/.idea/rersverApp.iml" />
+>>>>>>> a9dfae7db0dc593e1a8bc40d5a1dea2f5c71b8dc
     </modules>
   </component>
 </project>
